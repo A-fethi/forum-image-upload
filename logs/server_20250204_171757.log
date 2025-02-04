@@ -1,0 +1,57 @@
+FORUM: 2025/02/04 17:17:57 logs.go:25: Logger created successfully
+FORUM: 2025/02/04 17:17:57 parseTemplates.go:12: Attempting to parse templates with pattern:  ./templates/*.html
+FORUM: 2025/02/04 17:17:57 parseTemplates.go:24: Templates loaded successfully
+FORUM: 2025/02/04 17:18:11 homeHandler.go:13: Handling request for Home page
+FORUM: 2025/02/04 17:18:11 homeHandler.go:21: Checking for session token
+FORUM: 2025/02/04 17:18:11 homeHandler.go:24: No session token found, user not logged in
+FORUM: 2025/02/04 17:18:11 homeHandler.go:54: Setting cookie: session_token = 
+FORUM: 2025/02/04 17:18:11 getPosts.go:86: Fetching posts for page 1
+FORUM: 2025/02/04 17:18:11 getPosts.go:164: Executing query: SELECT username, id, title, content, Categories, created_at, likes, dislikes 
+              FROM posts 
+              ORDER BY created_at DESC 
+              LIMIT ? with limit 10
+FORUM: 2025/02/04 17:18:11 getPosts.go:177: Starting to process rows...
+FORUM: 2025/02/04 17:18:11 getPosts.go:182: Scanning row for post...
+FORUM: 2025/02/04 17:18:11 getPosts.go:189: Successfully scanned post with ID: 1
+FORUM: 2025/02/04 17:18:11 getPosts.go:192: Fetching comments for post ID: 1
+FORUM: 2025/02/04 17:18:11 getPosts.go:199: Successfully fetched comments for post ID: 1, Comments: []
+FORUM: 2025/02/04 17:18:11 getPosts.go:201: Appending post with ID: 1 to posts slice
+FORUM: 2025/02/04 17:18:11 getPosts.go:210: Finished processing rows. Total posts fetched: 1
+FORUM: 2025/02/04 17:18:11 getPosts.go:113: Number of posts returned: 1
+FORUM: 2025/02/04 17:18:34 register.go:82: Register: Successful registration for user: aaaa User ID: 2
+FORUM: 2025/02/04 17:18:34 homeHandler.go:13: Handling request for Home page
+FORUM: 2025/02/04 17:18:34 homeHandler.go:21: Checking for session token
+FORUM: 2025/02/04 17:18:34 homeHandler.go:30: Session token found, verifying...
+FORUM: 2025/02/04 17:18:34 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:18:34 homeHandler.go:47: User is logged in: {true aaaa false}
+FORUM: 2025/02/04 17:18:34 homeHandler.go:48: User successfully logged in: aaaa
+FORUM: 2025/02/04 17:18:34 homeHandler.go:54: Setting cookie: session_token = 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:18:34 getPosts.go:86: Fetching posts for page 1
+FORUM: 2025/02/04 17:18:34 getPosts.go:164: Executing query: SELECT username, id, title, content, Categories, created_at, likes, dislikes 
+              FROM posts 
+              ORDER BY created_at DESC 
+              LIMIT ? with limit 10
+FORUM: 2025/02/04 17:18:34 getPosts.go:177: Starting to process rows...
+FORUM: 2025/02/04 17:18:34 getPosts.go:182: Scanning row for post...
+FORUM: 2025/02/04 17:18:34 getPosts.go:189: Successfully scanned post with ID: 1
+FORUM: 2025/02/04 17:18:34 getPosts.go:192: Fetching comments for post ID: 1
+FORUM: 2025/02/04 17:18:34 getPosts.go:199: Successfully fetched comments for post ID: 1, Comments: []
+FORUM: 2025/02/04 17:18:34 getPosts.go:201: Appending post with ID: 1 to posts slice
+FORUM: 2025/02/04 17:18:34 getPosts.go:210: Finished processing rows. Total posts fetched: 1
+FORUM: 2025/02/04 17:18:34 getPosts.go:113: Number of posts returned: 1
+FORUM: 2025/02/04 17:18:59 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:18:59 validatePost.go:32: Validation successful for title and content
+FORUM: 2025/02/04 17:18:59 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:18:59 addPosts.go:124: Post created successfully, postID: 2
+FORUM: 2025/02/04 17:19:56 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:19:56 validatePost.go:32: Validation successful for title and content
+FORUM: 2025/02/04 17:19:56 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:19:56 addPosts.go:124: Post created successfully, postID: 3
+FORUM: 2025/02/04 17:20:12 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:20:12 validatePost.go:32: Validation successful for title and content
+FORUM: 2025/02/04 17:20:12 session.go:38: SessionCheck: Session is valid for token: 0194d1c1-9d7a-7447-8a12-1b8dd187db8e
+FORUM: 2025/02/04 17:20:12 addPosts.go:124: Post created successfully, postID: 4
+FORUM: 2025/02/04 17:20:23 main.go:48: 
+Received termination signal: interrupt
+FORUM: 2025/02/04 17:20:23 main.go:49: Shutting down...
+FORUM: 2025/02/04 17:20:23 main.go:51: Database connection closed.

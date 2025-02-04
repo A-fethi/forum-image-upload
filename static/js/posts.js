@@ -28,6 +28,19 @@ export function createPostElement(post) {
     postDate.classList.add('post-date');
     postDate.textContent = `• ${post.CreatedAt}`;
 
+    const postImage = document.createElement('div')
+    postImage.classList.add('post-image')
+    
+    if (post.ImageContent) { 
+        const postImgElement = document.createElement('img');
+        postImgElement.src = `/static/uploads/${post.ImageContent}`; // Adjust based on your server
+        postImgElement.alt = "Post Image";
+        postImgElement.classList.add('post-img');
+        postImage.appendChild(postImgElement);
+    }
+    
+    postElement.appendChild(postImage);
+
     authorInfo.appendChild(authorName);
     authorInfo.appendChild(postDate);
 
