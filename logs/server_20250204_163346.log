@@ -1,0 +1,38 @@
+FORUM: 2025/02/04 16:33:46 logs.go:25: Logger created successfully
+FORUM: 2025/02/04 16:33:46 parseTemplates.go:12: Attempting to parse templates with pattern:  ./templates/*.html
+FORUM: 2025/02/04 16:33:46 parseTemplates.go:24: Templates loaded successfully
+FORUM: 2025/02/04 16:33:48 homeHandler.go:13: Handling request for Home page
+FORUM: 2025/02/04 16:33:48 homeHandler.go:21: Checking for session token
+FORUM: 2025/02/04 16:33:48 homeHandler.go:30: Session token found, verifying...
+FORUM: 2025/02/04 16:33:48 session.go:22: SessionCheck: No active session found for token: 0194d18e-558f-7c45-8398-77153a084acf
+FORUM: 2025/02/04 16:33:48 homeHandler.go:36: Invalid or expired session token for token: 0194d18e-558f-7c45-8398-77153a084acf
+FORUM: 2025/02/04 16:33:48 homeHandler.go:54: Setting cookie: IsLoggedIn = false
+FORUM: 2025/02/04 16:33:48 homeHandler.go:54: Setting cookie: Username = 
+FORUM: 2025/02/04 16:33:48 homeHandler.go:54: Setting cookie: session_token = 
+FORUM: 2025/02/04 16:33:48 getPosts.go:86: Fetching posts for page 1
+FORUM: 2025/02/04 16:33:48 getPosts.go:164: Executing query: SELECT username, id, title, content, Categories, created_at, likes, dislikes 
+              FROM posts 
+              ORDER BY created_at DESC 
+              LIMIT ? with limit 10
+FORUM: 2025/02/04 16:33:48 getPosts.go:177: Starting to process rows...
+FORUM: 2025/02/04 16:33:48 getPosts.go:210: Finished processing rows. Total posts fetched: 0
+FORUM: 2025/02/04 16:33:56 register.go:82: Register: Successful registration for user: aaa User ID: 1
+FORUM: 2025/02/04 16:33:56 homeHandler.go:13: Handling request for Home page
+FORUM: 2025/02/04 16:33:56 homeHandler.go:21: Checking for session token
+FORUM: 2025/02/04 16:33:56 homeHandler.go:30: Session token found, verifying...
+FORUM: 2025/02/04 16:33:56 session.go:38: SessionCheck: Session is valid for token: 0194d198-bf94-7fc4-ad30-7dd4db49570b
+FORUM: 2025/02/04 16:33:56 homeHandler.go:47: User is logged in: {true aaa false}
+FORUM: 2025/02/04 16:33:56 homeHandler.go:48: User successfully logged in: aaa
+FORUM: 2025/02/04 16:33:56 homeHandler.go:54: Setting cookie: session_token = 0194d198-bf94-7fc4-ad30-7dd4db49570b
+FORUM: 2025/02/04 16:33:56 getPosts.go:86: Fetching posts for page 1
+FORUM: 2025/02/04 16:33:56 getPosts.go:164: Executing query: SELECT username, id, title, content, Categories, created_at, likes, dislikes 
+              FROM posts 
+              ORDER BY created_at DESC 
+              LIMIT ? with limit 10
+FORUM: 2025/02/04 16:33:56 getPosts.go:177: Starting to process rows...
+FORUM: 2025/02/04 16:33:56 getPosts.go:210: Finished processing rows. Total posts fetched: 0
+FORUM: 2025/02/04 16:34:18 session.go:38: SessionCheck: Session is valid for token: 0194d198-bf94-7fc4-ad30-7dd4db49570b
+FORUM: 2025/02/04 16:34:58 main.go:48: 
+Received termination signal: interrupt
+FORUM: 2025/02/04 16:34:58 main.go:49: Shutting down...
+FORUM: 2025/02/04 16:34:58 main.go:51: Database connection closed.

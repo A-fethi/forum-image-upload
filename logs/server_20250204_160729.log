@@ -1,0 +1,7 @@
+FORUM: 2025/02/04 16:07:29 logs.go:25: Logger created successfully
+FORUM: 2025/02/04 16:07:29 parseTemplates.go:12: Attempting to parse templates with pattern:  ./templates/*.html
+FORUM: 2025/02/04 16:07:29 parseTemplates.go:24: Templates loaded successfully
+FORUM: 2025/02/04 16:07:43 main.go:48: 
+Received termination signal: interrupt
+FORUM: 2025/02/04 16:07:43 main.go:49: Shutting down...
+FORUM: 2025/02/04 16:07:43 main.go:51: Database connection closed.
